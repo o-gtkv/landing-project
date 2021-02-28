@@ -13,7 +13,10 @@ p {
 
 .header {       
     padding: 14px 0;
-    background-color: black;    
+    background-color: black; 
+    position: sticky;   
+    top: 0;
+    z-index: 10;
 }
 
 .text-upcase {
@@ -24,30 +27,10 @@ p {
     font-weight: bold;
 }
 
-.text-line-height-24 {
-    line-height: 24px;    
-}
-
-.font-opensans-14 {
-    font-family: 'Open Sans', sans-serif;    
-    font-size: 14px;     
-}
-
-.font-opensans-16 {
-    font-family: 'Open Sans', sans-serif;    
-    font-size: 16px;     
-}
-
 .font-quattrocento-sans-36 {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 36px;
 }
-
-.font-quattrocento-sans-18 {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 18px;
-}
-
 
 .container {        
     max-width: 720px;
@@ -58,14 +41,12 @@ p {
 
 .row {
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;    
     overflow: hidden;
     margin-left: -15px;
     margin-right: -15px;
 }
 
-/* .row:first-child > .col-xs-12 { */
 .header .col-xs-12 {
     display: flex;
     align-items: center;
@@ -179,16 +160,6 @@ p {
     height: 48px;
 }
 
-.col-xs-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-[class*="col-"] {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .list-item-title {
     line-height: 24px;
     font-family: 'Open Sans', sans-serif;    
@@ -236,6 +207,16 @@ ol > li {
 
 ol > li:first-child {
     margin-top: 0;
+}
+
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 @media (min-width: 768px) {
