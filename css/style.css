@@ -230,10 +230,13 @@ ol > li::before {
     color: white;
 }
 
-ol > :not(li:first-child) {
+ol > li {
     margin-top: 20px;
 }
 
+ol > li:first-child {
+    margin-top: 0;
+}
 
 @media (min-width: 768px) {
     .container {        
