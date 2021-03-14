@@ -50,8 +50,8 @@
                                 eligendi est, dolor quae expedita doloribus rerum quidem consequatur doloremque?
                             </p>
                             <div class="btn-bar">
-                                <button class="btn">view more</button>
-                                <button class="btn">video tour</button>
+                                <button class="btn btn-type-1">view more</button>
+                                <button class="btn btn-type-1">video tour</button>
                             </div>                        
                         </div>
                     </div>
@@ -289,7 +289,7 @@
                 </div>
                 <div class="row" style="justify-content: center;">
                     <p>                    
-                        <button class="btn">show more</button>
+                        <button class="btn btn-type-1">show more</button>
                     </p>
                 </div>
             </div>
@@ -457,18 +457,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-9">
-                    <div class="footer-text">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>                        
+                    <div class="footer-text">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
                 </div>
-                <div class="col-xs-12 col-md-3" id="col-footer-social-bar">                        
+                <div class="col-xs-12 col-md-3" id="col-footer-social-bar">
                     <div class="icon-bar social-icon-bar-3">
                         <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
                         <a href=""><img src="img/facebook-small.png" alt="facebook-icon"></a>
-                        <a href=""><img src="img/skype.png" alt="facebook-icon"></a>                        
+                        <a href=""><img src="img/skype.png" alt="facebook-icon"></a>               
                         <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                    </div>               
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </footer>
+
+    <div class="modal hide">
+        <form class="modal-form">
+            <div class="form-fields">
+                <div class="input">
+                    <label for="name" class="text-title">your name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="input">    
+                    <label for="name" class="text-title">your email</label>
+                    <input type="text" name="email">
+                </div>
+            </div>        
+            <div class="form-fields">
+                <div class="input">
+                    <label for="message" class="text-title">your message</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-fields">
+                <button type="submit" class="btn btn-type-2">send message</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
