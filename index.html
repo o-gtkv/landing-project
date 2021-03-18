@@ -1,501 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quattrocento+Sans:wght@400;700&display=swap">    
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Modest</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quattrocento+Sans:wght@400;700&display=swap">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Modest</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-2">                
-                    <img src="img/logo.png" alt="logo">                        
-                </div>
-                <div class="col-xs-12 col-md-8">                           
-                    <ul class="menu">
-                        <li><a href="">home</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">work</a></li>
-                        <li><a href="">team</a></li>
-                        <li><a href="">services</a></li>
-                        <li><a href="">features</a></li>
-                        <li><a href="">contact</a></li>
-                    </ul>                    
-                </div>
-                <div class="col-xs-12 col-md-2">
-                    <form class="form-search">
-                        <input type="text" placeholder="search">
-                        <input type="submit" value="">
-                    </form>                                         
-                </div>
+   <header class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-6 col-md-2">
+               <div class="logo">
+                  <img class="logo__img" src="img/logo.png" alt="logo">
+               </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="slider">
-            <div class="container">          
-                <div class="row">                
-                    <div class="col-xs-12 col-md-7">
-                        <div class="slide">
-                            <h1 class="text-title">welcome to our marketplace</h1>
-                            <p class="slider-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Repellat odit autem debitis quos, commodi temporibus quia ratione quod dolores blanditiis,
-                                eligendi est, dolor quae expedita doloribus rerum quidem consequatur doloremque?
-                            </p>
-                            <div class="btn-bar">
-                                <button class="btn btn-type-1">view more</button>
-                                <button class="btn btn-type-1">video tour</button>
-                            </div>                        
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <div class="circle-btn-bar">
-                            <div class="circle-btn circle-btn-selected" id="slider-btn1"></div>
-                            <div class="circle-btn" id="slider-btn2"></div>
-                            <div class="circle-btn" id="slider-btn3"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xs-6 col-xs--justify--flex-end col-md-8 col-md--justify--center">
+               <ul class="menu navigation">
+                  <li class="menu__item">
+                     <a class="menu__link" href="">home</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="">about</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="">work</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="">team</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="">services</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="">features</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="">contact</a>
+                  </li>
+               </ul>
+               <div class="mobile-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
             </div>
-        </section>    
-        <section class="section bg-light" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="section-header text-title">we are modest</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-7">
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Hic totam corporis reiciendis quisquam sed qui excepturi nihil ducimus?
-                            Accusantium exercitationem officiis praesentium autem suscipit aut ipsa deleniti debitis quidem magnam?
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eligendi sequi similique soluta accusantium, perferendis commodi facere repudiandae quo minima <strong>voluptas vel assumenda</strong>,
-                            quibusdam aliquam eveniet exercitationem voluptatum. Aliquam, eveniet praesentium.
-                        </p>
-                        <p>         
-                            <div class="icon-bar social-icon-bar-1">
-                                <a href=""><img src="img/facebook.png" alt="facebook-icon"></a>
-                                <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
-                                <a href=""><img src="img/google.png" alt="google-icon"></a>
-                                <a href=""><img src="img/dribbble.png" alt="dribbble-icon"></a>
-                                <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                            </div>               
-                        </p>                    
-                    </div>
-                    <div class="col-xs-12 col-md-5">
-                        <ol class="enum-list">
-                            <li>
-                                <div class="text-title">dedication to the the customers</div>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </li>
-                            <li>
-                                <div class="text-title">working closely with our clients</div>
-                                Ipsa sint eaque porro fugiat inventore consequuntur, architecto unde distinctio.
-                            </li>
-                            <li>
-                                <div class="text-title">increase happiness</div>
-                                Odio maiores rerum ex atque est cumque blanditiis quaerat veros. Consectetur in tenetur ipsum.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
+            <div class="col-xs-12 col-md-2">
+               <form class="form-search">
+                  <input class="form-search__input-field" type="text" placeholder="search">
+                  <input class="form-search__button-submit" type="submit" value="">
+               </form>
             </div>
-        </section>
-        <section class="section bg-light" id="team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12"> 
-                        <h1 class="section-header text-title">meet the team</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-3">
-                        <p>
-                            <figure class="card">
-                                <div class="photo">
-                                    <div class="icon-bar social-icon-bar-2">
-                                        <a href=""><img src="img/facebook.png" alt="facebook-icon"></a>
-                                        <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
-                                        <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                                    </div>
-                                    <img src="img/photo1.png" alt="team member photo">
-                                </div>
-                                <figcaption class="info">
-                                    <div class="text-title">gloria bormley</div>
-                                    <div class="position">CEO and Founder</div>
-                                </figcaption>
-                            </figure>
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <p>
-                            <figure class="card">
-                                <div class="photo">
-                                    <div class="icon-bar social-icon-bar-2">
-                                        <a href=""><img src="img/facebook.png" alt="facebook-icon"></a>
-                                        <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
-                                        <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                                    </div>
-                                    <img src="img/photo2.png" alt="team member photo">
-                                </div>
-                                <figcaption class="info">
-                                    <div class="text-title">paul torres</div>                                                                
-                                    <div class="position">Head of Development</div>
-                                </figcaption>
-                            </figure>
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <p>
-                            <figure class="card">
-                                <div class="photo">
-                                    <div class="icon-bar social-icon-bar-2">
-                                        <a href=""><img src="img/facebook.png" alt="facebook-icon"></a>
-                                        <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
-                                        <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                                    </div>
-                                    <img src="img/photo3.png" alt="team member photo">
-                                </div>
-                                <figcaption class="info">
-                                    <div class="text-title">judith gillette</div>                                                                
-                                    <div class="position">Grpahic Designer</div>
-                                </figcaption>
-                            </figure>
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <p>
-                            <figure class="card">
-                                <div class="photo">
-                                    <div class="icon-bar social-icon-bar-2">
-                                        <a href=""><img src="img/facebook.png" alt="facebook-icon"></a>
-                                        <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
-                                        <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                                    </div>
-                                    <img src="img/photo4.png" alt="team member photo">
-                                </div>
-                                <figcaption class="info">
-                                    <div class="text-title">delores redd</div>                                                                
-                                    <div class="position">Client Service Director</div>
-                                </figcaption>
-                            </figure>
-                        </p>
-                    </div>
-                </div>
+         </div>
+      </div>
+   </header>
+   <section class="slider-section">
+      <div class="container slider-section__container">
+         <div class="row">
+            <div class="col-xs-12 col-md-7">
+               <div class="slider">
+                  <h1 class="title slider__title">welcome to our marketplace</h1>
+                  <p class="slider__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Repellat odit autem debitis quos, commodi temporibus quia ratione quod dolores blanditiis,
+                     eligendi est, dolor quae expedita doloribus rerum quidem consequatur doloremque?
+                  </p>
+                  <div class="button-group">
+                     <button class="button button--theme--white">view more</button>
+                     <button class="button button--theme--white">video tour</button>
+                  </div>
+               </div>
             </div>
-        </section>
-        <section class="section bg-dark" id="work">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="section-header text-title">lovely work.</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <p>
-                            <div class="sample">
-                                <img src="img/img1.png" alt="">
-                                <div class="wrapper">
-                                    <div class="cross">
-                                        <img src="img/cross.png" alt="">
-                                    </div>
-                                    <div class="description text-title">partnership guidlines</div>
-                                </div>
-                            </div>
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <p>
-                            <div class="sample">
-                                <img src="img/img2.png" alt="">
-                                <div class="wrapper">
-                                    <div class="cross">
-                                        <img src="img/cross.png" alt=""> 
-                                    </div>
-                                    <div class="description text-title">partnership guidlines</div>
-                                </div>
-                            </div>
-                        </p>                    
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <p>
-                            <div class="sample">
-                                <img src="img/img3.png" alt="">
-                                <div class="wrapper">
-                                    <div class="cross">
-                                        <img src="img/cross.png" alt=""> 
-                                    </div>
-                                    <div class="description text-title">partnership guidlines</div>
-                                </div>
-                            </div>
-                        </p>                    
-                    </div>                
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <p>
-                            <div class="sample">
-                                <img src="img/img4.png" alt="">
-                                <div class="wrapper">
-                                    <div class="cross">
-                                        <img src="img/cross.png" alt=""> 
-                                    </div>
-                                    <div class="description text-title">partnership guidlines</div>
-                                </div>
-                            </div>
-                        </p>                    
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <p>
-                            <div class="sample">
-                                <img src="img/img5.png" alt="">
-                                <div class="wrapper">
-                                    <div class="cross">
-                                        <img src="img/cross.png" alt=""> 
-                                    </div>
-                                    <div class="description text-title">partnership guidlines</div>
-                                </div>
-                            </div>
-                        </p>                    
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <p>
-                            <div class="sample">
-                                <img src="img/img6.png" alt="">
-                                <div class="wrapper">
-                                    <div class="cross">
-                                        <img src="img/cross.png" alt=""> 
-                                    </div>
-                                    <div class="description text-title">partnership guidlines</div>
-                                </div>
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <div class="row" style="justify-content: center;">
-                    <p>                    
-                        <button class="btn btn-type-1">show more</button>
-                    </p>
-                </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-12">
+               <div class="radio-group">
+                  <div class="radio-group__item radio-group--item-selected" id="slider-radio-item-1"></div>
+                  <div class="radio-group__item" id="slider-radio-item-2"></div>
+                  <div class="radio-group__item" id="slider-radio-item-3"></div>
+               </div>
             </div>
-        </section>
-        <section class="section bg-light" id="services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="section-header text-title">what we do.</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon1.png" alt="icon"></p>
-                            <p class="text-title">easy theme setup</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div>            
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon2.png" alt="icon"></p>
-                            <p class="text-title">pixel perfect design</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon3.png" alt="icon"></p>
-                            <p class="text-title">responsive display</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon4.png" alt="icon"></p>
-                            <p class="text-title">24/7 support</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon1.png" alt="icon"></p>
-                            <p class="text-title">easy theme setup</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div>            
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon2.png" alt="icon"></p>
-                            <p class="text-title">pixel perfect design</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon3.png" alt="icon"></p>
-                            <p class="text-title">responsive display</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-3">
-                        <div class="service">
-                            <p><img class="icon" src="img/service-icon4.png" alt="icon"></p>
-                            <p class="text-title">24/7 support</p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima nemo repudiandae!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+         </div>
+      </div>
+   </section>
+   <section class="section section--bg--light" id="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 class="title section__title section__title--dark">we are modest</h1>
             </div>
-        </section>
-        <section class="section bg-dark" id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="section-header text-title">features.</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <div class="feature">                    
-                            <img src="img/feature-img1.png" alt="">
-                            <p class="text-title">product design eames chairs</p>
-                            <p>
-                                Eames design are certainly iconic Everyone if us know at least two or thre if their
-                                famous chairs. I would even risk asking that most of us dream about having a nice Eames.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="feature">                    
-                            <img src="img/feature-img2.png" alt="">
-                            <p class="text-title">product design eames chairs</p>
-                            <p>
-                                I’ve always found logo design to be one of the most challenging things to get right. 
-                                There’s so much that a logo can say about a brand without actually saying it.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="feature">                    
-                            <img src="img/feature-img3.png" alt="">
-                            <p class="text-title">product design eames chairs</p>
-                            <p>
-                                It’s always interesting to see another designer’s take on a famous website, app or even physical product. 
-                                Different designers add their own personality and style.ames.
-                            </p>
-                        </div>
-                    </div>                                
-                </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-7">
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Hic totam corporis reiciendis quisquam sed qui excepturi nihil ducimus?
+                  Accusantium exercitationem officiis praesentium autem suscipit aut ipsa deleniti debitis quidem
+                  magnam?
+               </p>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi sequi similique soluta accusantium, perferendis commodi facere repudiandae quo minima
+                  <strong>voluptas vel assumenda</strong>,
+                  quibusdam aliquam eveniet exercitationem voluptatum. Aliquam, eveniet praesentium.
+               </p>
+               <div class="icon-group social-icon-group">
+                  <a class="social-icon-group__link" href="">
+                     <img class="social-icon-group__img" src="img/facebook.png" alt="facebook-icon">
+                  </a>
+                  <a class="social-icon-group__link" href="">
+                     <img class="social-icon-group__img" src="img/twitter.png" alt="twitter-icon">
+                  </a>
+                  <a class="social-icon-group__link" href="">
+                     <img class="social-icon-group__img" src="img/google.png" alt="google-icon">
+                  </a>
+                  <a class="social-icon-group__link" href="">
+                     <img class="social-icon-group__img" src="img/dribbble.png" alt="dribbble-icon">
+                  </a>
+                  <a class="social-icon-group__link" href="">
+                     <img class="social-icon-group__img" src="img/linkedin.png" alt="linkedin-icon">
+                  </a>
+               </div>
             </div>
-        </section>
-        <section class="section bg-light" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="section-header text-title">stay in touch.</h1>
-                    </div>
-                </div>
+            <div class="col-xs-12 col-md-5">
+               <ol class="enum-list about-section__enum_list">
+                  <li class="enum-list__item">
+                     <div class="title enum-list__item-title">dedication to the the customers</div>
+                     <div class="enum-list__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                  </li>
+                  <li class="enum-list__item">
+                     <div class="title enum-list__item-title">working closely with our clients</div>
+                     <div class="enum-list__item-text">Ipsa sint eaque porro fugiat inventore consequuntur, architecto unde
+                        distinctio.</div>
+                  </li>
+                  <li class="enum-list__item">
+                     <div class="title enum-list__item-title">increase happiness</div>
+                     <div class="enum-list__item-text">Odio maiores rerum ex atque est cumque blanditiis quaerat veros.
+                        Consectetur in tenetur ipsum.</div>
+                  </li>
+               </ol>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.508774645931!2d30.52007071573139!3d50.45024987947536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f01abb8b%3A0x7cdaa264b3af4b8d!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgMjAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1615192821737!5m2!1sru!2sua" allowfullscreen="" loading="lazy" class="map"></iframe>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="text-title">contact information</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ipsam est a nulla doloremque iure reiciendis ratione ab aspernatur, sequi error cum in neque recusandae tempora exercitationem?
-                        </p>
-                        <p>
-                            Commodi debitis molestias temporibus repellendus <strong>accusantium tenetur</strong> eum soluta laudantium dignissimos dolores. 
-                        </p>
-                    </div>
-                </div>
+         </div>
+      </div>
+   </section>
+   <section class="section section--bg--light" id="team">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 class="title section__title section__title--dark">meet the team</h1>
             </div>
-        </section>
-    </main>
-    <footer class="footer bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-9">
-                    <div class="footer-text">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
-                </div>
-                <div class="col-xs-12 col-md-3" id="col-footer-social-bar">
-                    <div class="icon-bar social-icon-bar-3">
-                        <a href=""><img src="img/twitter.png" alt="twitter-icon"></a>
-                        <a href=""><img src="img/facebook-small.png" alt="facebook-icon"></a>
-                        <a href=""><img src="img/skype.png" alt="facebook-icon"></a>               
-                        <a href=""><img src="img/linkedin.png" alt="linkedin-icon"></a>
-                    </div>
-                </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-3">
+               <figure class="card">
+                  <div class="card__photo">
+                     <img class="card__photo-img" src="img/photo1.png" alt="team member photo">
+                     <div class="icon-group card__socials-icon-group">
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/facebook.png" alt="facebook-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/twitter.png" alt="twitter-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/linkedin.png" alt="linkedin-icon">
+                        </a>
+                     </div>
+                  </div>
+                  <figcaption class="card__info">
+                     <div class="title card__name">gloria bormley</div>
+                     <div class="card__position">CEO and Founder</div>
+                  </figcaption>
+               </figure>
             </div>
-        </div>        
-    </footer>
+            <div class="col-xs-12 col-md-3">
+               <figure class="card">
+                  <div class="card__photo">
+                     <img src="img/photo2.png" alt="team member photo">
+                     <div class="icon-group card__socials-icon-group">
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/facebook.png" alt="facebook-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/twitter.png" alt="twitter-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/linkedin.png" alt="linkedin-icon">
+                        </a>
+                     </div>
+                  </div>
+                  <figcaption class="card__info">
+                     <div class="title card__name">paul torres</div>
+                     <div class="card__position">Head of Development</div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <figure class="card">
+                  <div class="card__photo">
+                     <img class="card__photo-img" src="img/photo3.png" alt="team member photo">
+                     <div class="icon-group card__socials-icon-group">
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/facebook.png" alt="facebook-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/twitter.png" alt="twitter-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/linkedin.png" alt="linkedin-icon">
+                        </a>
+                     </div>
+                  </div>
+                  <figcaption class="card__info">
+                     <div class="title card__name">judith gillette</div>
+                     <div class="card__position">Grpahic Designer</div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <figure class="card">
+                  <div class="card__photo">
+                     <img src="img/photo4.png" alt="team member photo">
+                     <div class="icon-group card__socials-icon-group">
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/facebook.png" alt="facebook-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/twitter.png" alt="twitter-icon">
+                        </a>
+                        <a class="card__socials-icon-group-link" href="">
+                           <img class="card__socials-icon-group-img" src="img/linkedin.png" alt="linkedin-icon">
+                        </a>
+                     </div>
+                  </div>
+                  <figcaption class="card__info">
+                     <div class="title card__name">delores redd</div>
+                     <div class="card__position">Client Service Director</div>
+                  </figcaption>
+               </figure>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section section--bg--dark" id="work">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 class="title section__title section__title--light">lovely work.</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-4">
+               <div class="sample">
+                  <img src="img/img1.png" alt="">
+                  <div class="additional__info">
+                     <div class="sample__cross">
+                        <img class="smaple__img" src="img/cross.png" alt="">
+                     </div>
+                     <div class="title sample__title">partnership guidlines</div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="sample">
+                  <img src="img/img2.png" alt="">
+                  <div class="additional__info">
+                     <div class="sample__cross">
+                        <img class="smaple__img" src="img/cross.png" alt="">
+                     </div>
+                     <div class="title sample__title">partnership guidlines</div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="sample">
+                  <img class="smaple__img" src="img/img3.png" alt="">
+                  <div class="additional__info">
+                     <div class="sample__cross">
+                        <img src="img/cross.png" alt="">
+                     </div>
+                     <div class="title sample__title">partnership guidlines</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-4">
+               <div class="sample">
+                  <img class="smaple__img" src="img/img4.png" alt="">
+                  <div class="additional__info">
+                     <div class="sample__cross">
+                        <img src="img/cross.png" alt="">
+                     </div>
+                     <div class="title sample__title">partnership guidlines</div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="sample">
+                  <img src="img/img5.png" alt="">
+                  <div class="additional__info">
+                     <div class="sample__cross">
+                        <img class="smaple__img" src="img/cross.png" alt="">
+                     </div>
+                     <div class="title sample__title">partnership guidlines</div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="sample">
+                  <img src="img/img6.png" alt="">
+                  <div class="additional__info">
+                     <div class="sample__cross">
+                        <img class="smaple__img" src="img/cross.png" alt="">
+                     </div>
+                     <div class="title sample__title">partnership guidlines</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row" style="justify-content: center;">
+            <button class="button sample__button button--theme--white">show more</button>
+         </div>
+      </div>
+   </section>
+   <section class="section section--bg--light" id="services">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 class="title section__title section__title--dark">what we do.</h1>
+            </div>
+         </div>
+         <div class="row services__row">
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon1.png" alt="icon">
+                  </div>
+                  <div class="title service__title">easy theme setup</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon2.png" alt="icon">
+                  </div>
+                  <div class="title service__title">pixel perfect design</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon3.png" alt="icon">
+                  </div>
+                  <div class="title service__title">responsive display</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon4.png" alt="icon">
+                  </div>
+                  <div class="title service__title">24/7 support</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row services__row">
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <div class="icon service__icon">
+                        <img class="icon__img" src="img/service-icon1.png" alt="icon">
+                     </div>
+                  </div>
+                  <div class="title service__title">easy theme setup</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon2.png" alt="icon">
+                  </div>
+                  <div class="title service__title">pixel perfect design</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon3.png" alt="icon">
+                  </div>
+                  <div class="title service__title">responsive display</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+               <div class="service">
+                  <div class="icon service__icon">
+                     <img class="icon__img" src="img/service-icon4.png" alt="icon">
+                  </div>
+                  <div class="title service__title">24/7 support</div>
+                  <div class="service__text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Laborum, porro non reprehenderit magni odit deleniti perferendis obcaecati inventore, minima
+                     nemo
+                     repudiandae!
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section section--bg--dark" id="features">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 class="title section__title section__title--light">features.</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-4">
+               <div class="feature">
+                  <img class="feature__img" src="img/feature-img1.png" alt="">
+                  <div class="title feature__title">product design eames chairs</div>
+                  <p class="feature__text">
+                     Eames design are certainly iconic Everyone if us know at least two or thre if their
+                     famous chairs. I would even risk asking that most of us dream about having a nice Eames.
+                  </p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="feature">
+                  <img class="feature__img" src="img/feature-img2.png" alt="">
+                  <div class="title feature__title">product design eames chairs</div>
+                  <p class="feature__text">
+                     I’ve always found logo design to be one of the most challenging things to get right.
+                     There’s so much that a logo can say about a brand without actually saying it.
+                  </p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <div class="feature">
+                  <img class="feature__img" src="img/feature-img3.png" alt="">
+                  <div class="title feature__title">product design eames chairs</div>
+                  <p class="feature__text">
+                     It’s always interesting to see another designer’s take on a famous website, app or even physical
+                     product.
+                     Different designers add their own personality and style.ames.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section section--bg--light" id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h1 class="title section__title section__title--dark">stay in touch.</h1>
+            </div>
+         </div>
+      </div>
+      <iframe class="map contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.508774645931!2d30.52007071573139!3d50.45024987947536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50f01abb8b%3A0x7cdaa264b3af4b8d!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgMjAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1615192821737!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-md-6">
+               <p class="title">contact information</p>
+               <p class="contact__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsam est a nulla doloremque iure reiciendis ratione ab aspernatur, sequi error cum in neque
+                  recusandae
+                  tempora exercitationem?
+               </p>
+               <p class="contact__text">
+                  Commodi debitis molestias temporibus repellendus <strong>accusantium tenetur</strong> eum soluta
+                  laudantium dignissimos dolores.
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="container">
+         <div class="row footer__row">
+            <div class="col-xs-12 col-md-9">
+               <div class="footer__text">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
+            </div>
+            <div class="col-xs-12 col-md-3" id="col-footer-social-bar">
+               <div class="icon-group footer-socials">
+                  <a class="footer-socials__link" href="">
+                     <img class="footer-socials__img" src="img/twitter.png" alt="twitter-icon">
+                  </a>
+                  <a class="footer-socials__link" href="">
+                     <img class="footer-socials__img" src="img/facebook-small.png" alt="facebook-icon">
+                  </a>
+                  <a class="footer-socials__link" href="">
+                     <img class="footer-socials__img" src="img/skype.png" alt="facebook-icon">
+                  </a>
+                  <a class="footer-socials__link" href="">
+                     <img class="footer-socials__img" src="img/linkedin.png" alt="linkedin-icon">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
 
-    <div class="modal hide">
-        <form class="modal-form">
-            <div class="form-fields">
-                <div class="input">
-                    <label for="name" class="text-title">your name</label>
-                    <input type="text" name="name">
-                </div>
-                <div class="input">    
-                    <label for="name" class="text-title">your email</label>
-                    <input type="text" name="email">
-                </div>
-            </div>        
-            <div class="form-fields">
-                <div class="input">
-                    <label for="message" class="text-title">your message</label>
-                    <textarea name="message" cols="30" rows="10"></textarea>
-                </div>
+   <div class="modal-form modal-form--hidden" id="feedback-form">
+      <form class="form">
+         <div class="form__field-group">
+            <div class="form__field">
+               <label class="title" for="name">your name</label>
+               <input class="text-input form__input-text" type="text" name="name">
             </div>
-            <div class="form-fields">
-                <button type="submit" class="btn btn-type-2">send message</button>
+            <div class="form__field">
+               <label class="title" for="email">your email</label>
+               <input class="text-input form__input-email" type="email" name="email">
             </div>
-        </form>
-    </div>
+         </div>
+         <div class="form__field-group">
+            <div class="form__field">
+               <label class="title" for="message">your message</label>
+               <textarea class="text-input form__input-textarea" name="message" rows="10"></textarea>
+            </div>
+         </div>
+         <div class="form__field-group">
+            <div class="form__field">
+               <button class="button button--theme--silver" type="submit">send message</button>
+            </div>
+         </div>
+      </form>
+   </div>
 
-    <script src="app.js"></script>
+   <script src="app.js"></script>
 
 </body>
+
 </html>
