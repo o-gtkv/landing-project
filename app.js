@@ -15,8 +15,7 @@ function documentOnScroll() {
     const h = document.body.scrollHeight/2;
     const e = 30;
     if (fbForm.classList.contains("modal-form--hidden") &&
-    (window.scrollY >= Math.abs(h - e) && window.scrollY <= h + e)) {
-        console.log('asf')
+    (window.scrollY >= Math.abs(h - e) && window.scrollY <= h + e)) {        
         openModalForm()
         document.removeEventListener('scroll', documentOnScroll)
     }    
@@ -32,15 +31,15 @@ fbForm.addEventListener('click', modalFormOnClick)
 document.addEventListener('scroll', documentOnScroll)
 
 // --- mobile menu ---
-const mobileMenu = document.querySelector('.nav-mobile-menu')
-const mainMenu = document.querySelector('.navigation')
+const mobileMenu = document.querySelector('.mobile-menu')
+const mainMenu = document.querySelector('.menu')
 
 mobileMenu.addEventListener('click', function() {
-    mobileMenu.classList.toggle('active-menu')
-    if (mobileMenu.classList.contains('active-menu')) {
-        mainMenu.classList.add('active-menu')
+    mobileMenu.classList.toggle('mobile-menu--active')
+    if (mobileMenu.classList.contains('mobile-menu--active')) {
+        mainMenu.classList.add('mobile-menu--active')
     } else  {
-        mainMenu.classList.remove('active-menu')
+        mainMenu.classList.remove('mobile-menu--active')
     }
 
 })

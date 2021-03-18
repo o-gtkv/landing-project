@@ -6,8 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quattrocento+Sans:wght@400;700&display=swap">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quattrocento+Sans:wght@400;700&display=swap">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
    <title>Modest</title>
@@ -23,7 +22,7 @@
                </div>
             </div>
             <div class="col-xs-6 col-xs--justify--flex-end col-md-8 col-md--justify--center">
-               <ul class="menu navigation">
+               <ul class="menu menu--view--mobile">
                   <li class="menu__item">
                      <a class="menu__link" href="">home</a>
                   </li>
@@ -54,8 +53,8 @@
             </div>
             <div class="col-xs-12 col-md-2">
                <form class="form-search">
-                  <input class="form-search__input-field" type="text" placeholder="search">
-                  <input class="form-search__button-submit" type="submit" value="">
+                  <input class="text-input form-search__input-field" type="text" placeholder="search">
+                  <input class="text-input form-search__button-submit" type="submit" value="">
                </form>
             </div>
          </div>
@@ -555,24 +554,24 @@
 
    <div class="modal-form modal-form--hidden" id="feedback-form">
       <form class="form">
-         <div class="form__field-group">
-            <div class="form__field">
+         <div class="form__item-group">
+            <div class="form__item">
                <label class="title" for="name">your name</label>
                <input class="text-input form__input-text" type="text" name="name">
             </div>
-            <div class="form__field">
+            <div class="form__item">
                <label class="title" for="email">your email</label>
                <input class="text-input form__input-email" type="email" name="email">
             </div>
          </div>
-         <div class="form__field-group">
-            <div class="form__field">
+         <div class="form__item-group">
+            <div class="form__item">
                <label class="title" for="message">your message</label>
                <textarea class="text-input form__input-textarea" name="message" rows="10"></textarea>
             </div>
          </div>
-         <div class="form__field-group">
-            <div class="form__field">
+         <div class="form__item-group">
+            <div class="form__item">
                <button class="button button--theme--silver" type="submit">send message</button>
             </div>
          </div>
@@ -580,7 +579,6 @@
    </div>
 
    <script src="app.js"></script>
-
 </body>
 
 </html>
