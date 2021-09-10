@@ -8,6 +8,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quattrocento+Sans:wght@400;700&display=swap">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
    <title>Modest</title>
@@ -61,34 +62,40 @@
          </div>
       </div>
    </header>
-   <section class="slider-section">
-      <div class="container slider-section__container">
-         <div class="row">
-            <div class="col-xs-12 col-md-7">
-               <div class="slider">
-                  <h1 class="title slider__title">welcome to our marketplace</h1>
-                  <p class="slider__text">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Repellat odit autem debitis quos, commodi temporibus quia ratione quod dolores blanditiis,
-                     eligendi est, dolor quae expedita doloribus rerum quidem consequatur doloremque?
-                  </p>
-                  <div class="button-group">
-                     <button class="button button--theme--white">view more</button>
-                     <button class="button button--theme--white">video tour</button>
-                  </div>
-               </div>
-            </div>
+   <section class="slider-section">      
+      <div class="swiper-container swiper-container-top">
+         <div class="swiper-wrapper">
+             <div class="swiper-slide">               
+                  <div class="slide1">
+                     <h1 class="title slider__title">welcome to our marketplace</h1>
+                     <p class="slider__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat odit autem debitis quos, commodi temporibus quia ratione quod dolores blanditiis,
+                        eligendi est, dolor quae expedita doloribus rerum quidem consequatur doloremque?
+                     </p>
+                     <div class="button-group">
+                        <button class="button button--theme--white">view more</button>
+                        <button class="button button--theme--white">video tour</button>
+                     </div>
+                  </div>                  
+               </div>               
+               <div class="swiper-slide">               
+                  <div class="slide1">
+                     <h1 class="title slider__title">welcome to our marketplace</h1>
+                     <p class="slider__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repellat odit autem debitis quos, commodi temporibus quia ratione quod dolores blanditiis,
+                        eligendi est, dolor quae expedita doloribus rerum quidem consequatur doloremque?
+                     </p>
+                     <div class="button-group">
+                        <button class="button button--theme--white">view more</button>
+                        <button class="button button--theme--white">video tour</button>
+                     </div>
+                  </div>                  
+               </div>                  
          </div>
-         <div class="row">
-            <div class="col-xs-12 col-md-12">
-               <div class="radio-group">
-                  <div class="radio-group__item radio-group--item-selected" id="slider-radio-item-1"></div>
-                  <div class="radio-group__item" id="slider-radio-item-2"></div>
-                  <div class="radio-group__item" id="slider-radio-item-3"></div>
-               </div>
-            </div>
-         </div>
-      </div>
+         <div class="swiper-pagination"></div>                     
+     </div>         
    </section>
    <section class="section section--bg--light" id="about">
       <div class="container">
@@ -589,6 +596,7 @@
       </form>
    </div>
 
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="app.js"></script>
 </body>
 

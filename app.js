@@ -1,3 +1,16 @@
+new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    autoplay: {
+        delay: 3000
+    }
+})
+
 // --- modal form ---
 const fbForm = document.getElementById('feedback-form')
 
